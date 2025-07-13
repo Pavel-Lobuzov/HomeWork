@@ -78,3 +78,54 @@ func isNight (Day: String) -> Bool {
 }
 print (isNight(Day: "ночь"))
 */
+
+
+//8
+          
+func seasons (month: Int) -> String {
+    if month == 12 || month <= 2 {
+        return String("зима")
+    } else if month >= 3 && month <= 5 {
+        return String("весна")
+    } else if month >= 6 && month <= 8 {
+        return String("лето")
+    } else if  month >= 7 && month <= 11 {
+        return String("осень")
+        } else {
+    return String("неверное значение")
+}
+}
+print("сейчас \(seasons(month: 8))")
+//
+func seasons2 (month: Int) -> String {
+    switch month {
+    case 12, 1, 2:
+        return "зима"
+    case 3, 4, 5:
+        return "весна"
+    case 6, 7, 8:
+        return "лето"
+    case 9, 10, 11:
+        return "осень"
+    default: return "неверное значение"
+    }
+}
+print(seasons2(month: 13))
+
+
+//func seasons3(month: Int) -> String {
+//    switch month {
+//    case 12...2:
+//        return "зима"
+//    case 3...5:
+//        return "весна"
+//    case 6...8:
+//        return "лето"
+//    case 9...11:
+//        return "осень"
+//    default:
+//        return "неверное значение"
+//    }
+//    }
+//print(seasons3(month: 13)) ошибка , нет верхней и нижней границы ?
+
