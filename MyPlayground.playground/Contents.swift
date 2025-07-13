@@ -16,3 +16,12 @@ func sayHello2 (_ name: String = "Паша") -> String   {
     return String ("Привет! \(name)")
 }
 print(sayHello2())
+
+
+//2
+
+      func names (_ first: String, last: String) -> Int {
+    return first.count + last.count
+}
+print(names("Pavel", last: "Lobuzov"))
+
