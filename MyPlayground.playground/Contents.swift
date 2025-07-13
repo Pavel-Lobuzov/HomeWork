@@ -52,3 +52,10 @@ func divide (numb1: Int , numb2: Int ) -> Int {
     numb1 / numb2
 }
 print(divide(numb1: 2, numb2: 3))
+
+//5
+func circloud (r: Int) -> Double {
+    return 3.14 * Double(r) * Double(r)
+}
+print("радиус круга r равен \(circloud(r: 5))")
+
