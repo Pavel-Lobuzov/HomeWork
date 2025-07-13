@@ -59,3 +59,22 @@ func circloud (r: Int) -> Double {
 }
 print("радиус круга r равен \(circloud(r: 5))")
 
+//6
+func isNight (time: Int) -> String {
+    if time >= 20 || time <= 6 {
+        return String("Сейчас ночь")
+    } else {
+        return String("Сейчас день")
+    }
+}
+print(isNight(time: 20 ))
+/*
+func isNight (Day: String) -> Bool {
+    if Day == "ночь" {
+        return true
+    } else {
+        return false
+    }
+}
+print (isNight(Day: "ночь"))
+*/
