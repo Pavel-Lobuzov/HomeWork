@@ -31,3 +31,24 @@ func square(_ x: Int) -> Int {
     return x * x
 }
 print(square(2))
+
+//4
+func sum (numb1: Double , numb2: Double ) -> Double {
+    return numb1 + numb2
+}
+print(sum(numb1: 35.5, numb2: 14.5))
+//
+func minus (numb1: Int , numb2: Int ) -> Int {
+    numb1 - numb2
+}
+print(minus(numb1: 2, numb2: 3))
+//
+func multiply (numb1: Int , numb2: Int ) -> Int {
+    numb1 * numb2
+}
+print(multiply(numb1: 2, numb2: 3))
+//
+func divide (numb1: Int , numb2: Int ) -> Int {
+    numb1 / numb2
+}
+print(divide(numb1: 2, numb2: 3))
