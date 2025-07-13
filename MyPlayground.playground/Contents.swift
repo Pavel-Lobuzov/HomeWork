@@ -25,3 +25,9 @@ print(sayHello2())
 }
 print(names("Pavel", last: "Lobuzov"))
 
+//3
+
+func square(_ x: Int) -> Int {
+    return x * x
+}
+print(square(2))
