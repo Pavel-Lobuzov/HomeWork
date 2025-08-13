@@ -95,6 +95,7 @@ func seasons (month: Int) -> String {
     return String("неверное значение")
 }
 }
+
 print("сейчас \(seasons(month: 8))")
 //
 func seasons2 (month: Int) -> String {
@@ -128,6 +129,29 @@ print(seasons2(month: 13))
 //    }
 //    }
 //print(seasons3(month: 13)) ошибка , нет верхней и нижней границы ?
+
+//9
+//функции высшего порядка
+
+//1
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let doubledNumbers = numbers.map { $0 * 2  }   /*либо numbers * numbers*/
+print(doubledNumbers)
+//2
+let filterNumbers = numbers.filter { $0 % 2 == 0 }
+print(filterNumbers)
+//3
+//let words = ["apple", "banana", "cherry"]
+//let words = words.forEach
+//print(words)
+//4
+let names = ["pavel", "lobuzov",]
+let uppercasedNames = names.map { $0.uppercased() }
+print(uppercasedNames)
+
+
+
+
 
 
 
